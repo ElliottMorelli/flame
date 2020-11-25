@@ -17,15 +17,15 @@ async function loadBuffer(bufferURL) {
 })
 
 async function playBirdAudio(){
-    audioCtx = new AudioContext()
+    audioCtx = new AudioContext();
 
 
     birdSource = await loadBuffer('./silly_birds.mp3');
     source = audioCtx.createBufferSource();
-    source.connect(globalGain).connect(audioCtx.destination);
+    source.connect(audioCtx.destination); 
+
     source.buffer = birdSource;
     source.start();
    
-    source.connect(audioCtx.destination); 
 
 }
