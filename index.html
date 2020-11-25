@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .taboo{
+                position: absolute;
+                top: 400px;
+                left: 1250px;
+                width: 180px;
+                height:auto;
+            }
+            .gren{
+                position: absolute;
+                top: 530px;
+                left: 170px;
+                width: 320px;
+                height:auto;
+                z-index: 3;
+
+            }
+            .water{
+                position: absolute;
+                top: 670px;
+                left: 170px;
+                width: 320px;
+                height: 100px;
+                opacity: 70%;
+
+            }
+            .clickable:hover {
+                cursor: pointer;
+            }
+            audio { display:none;}
+        </style>
+
+        <script src="./audio.js"></script>
+
+    </head>
+    <body background="./img/hills.jpg">
+
+        <img src="./img/taboo3.png" class="taboo clickable" alt="sex club door" onClick="goToDozer()">
+        <img src="./img/gren_des_trans.png" class="gren clickable" alt="grenwich buildings" onClick="goToYou()">
+        <img src="./img/water.gif" class="water">
+        <script>
+            function goToDozer(){
+                window.location.href = "https://www.youtube.com/watch_popup?autoplay=1&v=syWLn5nYPwQ&feature=youtu.be";
+            }
+            function goToYou(){
+                window.location.href = "https://www.youtube.com/watch_popup?autoplay=1&v=uxqJb2RPGnY&feature=youtu.be";
+            }
+        </script>
+
+    </body>
+</html>
