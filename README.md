@@ -1,3 +1,2 @@
 # flame
-senior studio
-presentation format for video
+i just love grenwich village
